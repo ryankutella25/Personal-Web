@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font: 14px;
+  flex: 1;
+  height:max-content;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(18, 104, 114),
+    rgb(1, 35, 40)
+  );
+  width: 95%;
+  margin-inline: auto;
+  color: "#303030";
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-color: black;
+  border-width: 5px;
+}
+.headerLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.headerMiddle {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.tabs {
+  flex: 1;
+  color: rgb(203, 203, 203);
+}
+.headerRight {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+}
+.links {
+  margin-left: 5%;
+  color: rgb(173, 173, 173);
+}
+.resume {
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 5%;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: aqua;
+  color: aqua;
+}
+.resumeText {
+  flex: 1;
+  color: aqua;
+}
+
+ion-icon {
+  flex: 1;
+  font-size: 24px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+p {
+  color: rgb(89, 89, 89);
+}
+
+h1 {
+  margin-top: 14px;
+  color: rgb(173, 173, 173);
+}
+
+.container {
+  flex: 11;
+  margin-top: 20px;
+  padding-bottom: 80px;
+}
+.footer {
+  flex: 1;
+}
+
+.headerMiddle a,.headerRight a{
+    transition: all ease .5s;
+}
+
+.headerMiddle a:hover,.headerRight a:hover{
+  color: turquoise;
+}
+
+.headerMiddle:hover a:not(:hover),.headerRight:hover a:not(:hover){
+    opacity: .5;
+}
+
+
+
+.line{
+    width: 100%;
+    height: 1px;
+    margin-top: -10px;
+    background-color: white;
+    margin-inline: auto;
+}
+
+/* About Me Section on Home Page */
+.aboutHolder{
+    width: 50%;
+    margin-inline: auto;
+    padding: 20px;
+    padding-right: 60px;
+    min-height: 230px;
+    background-color: #282828;
+    border-radius: 10px;
+    box-shadow: #bbb9 4px 4px 10px 0px;
+}
+.aboutHolder h2{
+    color: turquoise;
+}
+.aboutHolder p{
+    color: white;
+    line-height: 30px;
+}
+
+
+/* Project Card Styles */
+.cardHolder {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+  }
+  
+  .card {
+    background-color: #282828;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: #bbb9 4px 4px 10px 0px;
+  }
+  
+  .card h3 {
+    text-align: center;
+    color: turquoise;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .card p{
+    text-align: center;
+  }
+
+  .card ul{
+    padding: 0;
+    width: 90%;
+    margin-inline: auto;
+    color: white;
+    margin-top: 0px;
+  }
+  .card ul li{
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .card a{
+    align-self: center;
+    justify-self:end;
+    border: 1px solid turquoise;
+    color: turquoise;
+    border-radius: 10px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    transition: all ease .5s;
+    margin-top: auto;
+  }
+
+  .card a:hover{
+    opacity: .7;
+    transform: translateY(-2px);
+  }
