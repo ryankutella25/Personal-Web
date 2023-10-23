@@ -1,3 +1,9 @@
+:root {
+  --mainText: rgb(200, 200, 200);
+  --secondaryText: rgb(89, 89, 89);
+  --tertiaryColor: aqua;
+}
+
 html{
   min-height: 100%;
   height: max-content;
@@ -41,7 +47,7 @@ body {
 }
 .tabs {
   flex: 1;
-  color: rgb(203, 203, 203);
+  color: var(--mainText);
 }
 .headerRight {
   display: flex;
@@ -53,7 +59,7 @@ body {
 }
 .links {
   margin-left: 5%;
-  color: rgb(173, 173, 173);
+  color: var(--mainText);
 }
 .resume {
   margin-top: 10px;
@@ -62,12 +68,12 @@ body {
   border-width: 2px;
   border-style: solid;
   border-radius: 5px;
-  border-color: aqua;
-  color: aqua;
+  border-color: var(--tertiaryColor);
+  color: var(--tertiaryColor);
 }
 .resumeText {
   flex: 1;
-  color: aqua;
+  color: var(--tertiaryColor);
 }
 
 ion-icon {
@@ -81,13 +87,9 @@ a {
   font-size: 18px;
 }
 
-p {
-  color: rgb(89, 89, 89);
-}
-
 h1 {
   margin-top: 14px;
-  color: rgb(200, 200, 200);
+  color: var(--mainText);
 }
 
 .container {
@@ -104,7 +106,7 @@ h1 {
 }
 
 .headerMiddle a:hover,.headerRight a:hover{
-  color: turquoise;
+  color: var(--tertiaryColor);
 }
 
 .headerMiddle:hover a:not(:hover),.headerRight:hover a:not(:hover){
@@ -117,7 +119,7 @@ h1 {
     width: 100%;
     height: 1px;
     margin-top: -10px;
-    background-color: white;
+    background-color: var(--mainText);
     margin-inline: auto;
 }
 
@@ -136,21 +138,20 @@ h1 {
 .aboutHolder h2{
   position: absolute;
   display: inline-block;
-    color: turquoise;
+    color: var(--tertiaryColor);
     transform: translateY(-20px);
     left: 9%;
 }
 .aboutHolder p{
   padding-top: 30px;;
-    color: white;
+    color: var(--mainText);
     line-height: 30px;
 }
 .aboutHolder li{
-    color: white;
+    color: var(--mainText);
     line-height: 30px;
     
 }
-
 
 /* Project Card Styles */
 .cardHolder {
@@ -174,33 +175,37 @@ h1 {
   }
   
   .card h3 {
+    font-size: 24px;
     text-align: center;
-    color: turquoise;
+    color: var(--tertiaryColor);
     margin-top: 10px;
     margin-bottom: 0px;
   }
 
   .card p{
     text-align: center;
+    color: var(--mainText);
   }
 
   .card ul{
     padding: 0;
     width: 90%;
     margin-inline: auto;
-    color: white;
+    color: var(--mainText);
     margin-top: 0px;
   }
   .card ul li{
     width: 90%;
     margin-inline: auto;
+    line-height: 20px;
+    padding-bottom: 10px;
   }
 
   .card a{
     align-self: center;
     justify-self:end;
-    border: 1px solid turquoise;
-    color: turquoise;
+    border: 1px solid var(--tertiaryColor);
+    color: var(--tertiaryColor);
     border-radius: 10px;
     padding-block: 5px;
     padding-inline: 10px;
