@@ -128,8 +128,7 @@ h1 {
     width: 80%;
     margin-inline: auto;
     padding: 20px;
-    padding-inline: 100px;
-    padding-right: 60px;
+    padding-inline: 80px;
     height: auto;
     background-color: #282828;
     border-radius: 10px;
@@ -138,19 +137,26 @@ h1 {
 .aboutHolder h2{
   position: absolute;
   display: inline-block;
-    color: var(--tertiaryColor);
-    transform: translateY(-20px);
-    left: 9%;
+  color: var(--tertiaryColor);
+  transform: translateY(-13px) translateX(-40px);
 }
 .aboutHolder p{
-  padding-top: 30px;;
-    color: var(--mainText);
-    line-height: 30px;
+  color: var(--mainText);
+  line-height: 30px;
+}
+.aboutHolder p:first-of-type{
+  padding-top: 30px;
+}
+.aboutHolder ul{
+  margin-block-start: 50px;
+  padding-inline-start: 0px;
 }
 .aboutHolder li{
-    color: var(--mainText);
-    line-height: 30px;
-    
+  padding-inline-start: 0px;
+  color: var(--mainText);
+  line-height: 30px;
+  list-style-type: "- ";
+  padding-block: 10px;
 }
 
 /* Project Card Styles */
